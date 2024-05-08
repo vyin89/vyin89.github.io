@@ -13,7 +13,7 @@ export const data = [
     end: "Present",
     company: "IntelligenceBank",
     description:
-      "IntelligenceBank is a digital asset management platform that offers marketing operations software to help businesses streamline processes, enhance compliance, and manage digital assets, creative content, and marketing workflows.",
+      "A digital asset management platform that offers marketing operations software to help businesses streamline processes, enhance compliance, and manage digital assets, creative content, and marketing workflows.",
     achievements: [
       "Advocating for best practices in front-end development",
       "Contributing to technical research on front-end topics",
@@ -33,7 +33,7 @@ export const data = [
     end: "July 2023",
     company: "Wesfarmers OneDigital",
     description:
-      "Wesfarmers OneDigital is a digital division of Wesfarmers focused on leveraging technology and digital innovation to drive growth and efficiency across the company's retail and industrial segments through the OnePass program.",
+      "A digital division of Wesfarmers focused on leveraging technology and digital innovation to drive growth and efficiency across the company's retail and industrial segments through the OnePass program.",
     achievements: [
       "Engineering Best Practices: Spearheaded the alignment of engineering practices with strategic vision, enhancing business performance. Collaborated on product roadmap and architectural design, boosting the Digital Ecosystem's value.",
       "Software Development & Optimisation: Led efforts in software environment design, build, deployment, and management, achieving a significant increase in operational efficiency.",
@@ -52,7 +52,7 @@ export const data = [
     end: "January 2023",
     company: "Airwallex",
     description:
-      "Airwallex is a global fintech platform that offers businesses financial services and solutions such as cross-border payments, treasury management, and payment cards, facilitating international transactions with ease and efficiency.",
+      "A global fintech platform that offers businesses financial services and solutions such as cross-border payments, treasury management, and payment cards, facilitating international transactions with ease and efficiency.",
     achievements: [
       "Rapid Growth Contributor: Actively participated in the company's impressive growth trajectory, expanding from 32 to 1,500 employees, while adapting to and thriving in a rapidly scaling work environment.",
       "Airboard Project Leadership: Spearheaded the development of 'Airboard,' an essential internal tool for payment and compliance operations management, enhancing operational efficiency.",
@@ -73,7 +73,7 @@ export const data = [
     end: "June 2017",
     company: "Ericsson",
     description:
-      "Ericsson is a leading global provider of telecommunications equipment and services, specializing in mobile and fixed network infrastructure, broadband solutions, and associated services for operators and enterprises.",
+      "A leading global provider of telecommunications equipment and services, specializing in mobile and fixed network infrastructure, broadband solutions, and associated services for operators and enterprises.",
     achievements: [
       "Developed multiple front end portals using multiple technology stacks.",
       "Implemented a Continuous Delivery pipeline with Docker, Bamboo, Bitbucket and AWS AMI’s.",
