@@ -1,9 +1,12 @@
-import { MantineProvider } from "@mantine/core";
+import { MantineProvider, createTheme } from "@mantine/core";
 import Home from "./Pages/Home";
 
 function App() {
+  const theme = createTheme({
+    primaryColor: "violet",
+  });
   return (
-    <MantineProvider defaultColorScheme="dark">
+    <MantineProvider defaultColorScheme="dark" theme={theme}>
       <Home />
     </MantineProvider>
   );

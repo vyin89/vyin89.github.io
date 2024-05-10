@@ -1,17 +1,38 @@
 import {
-  ActionIcon,
   Group,
   NavLink,
+  Switch,
+  rem,
   useMantineColorScheme,
+  useMantineTheme,
 } from "@mantine/core";
-import { IconMoon, IconSun } from "@tabler/icons-react";
+import { IconMoonStars, IconSun } from "@tabler/icons-react";
 import { MouseEvent } from "react";
 import { menuItems } from "./menuItems";
 
 const yOffset = -60;
 
 export function Header() {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme({
+    keepTransitions: true,
+  });
+  const theme = useMantineTheme();
+
+  const sunIcon = (
+    <IconSun
+      style={{ width: rem(16), height: rem(16) }}
+      stroke={2.5}
+      color={theme.colors.yellow[4]}
+    />
+  );
+
+  const moonIcon = (
+    <IconMoonStars
+      style={{ width: rem(16), height: rem(16) }}
+      stroke={2.5}
+      color={theme.colors.blue[6]}
+    />
+  );
 
   const scrollToSection = (sectionId: string) => (event: MouseEvent) => {
     event.preventDefault();
@@ -40,14 +61,14 @@ export function Header() {
           </div>
         ))}
       </Group>
-      <ActionIcon
-        aria-label="toggle dark mode"
-        variant="subtle"
-        onClick={toggleColorScheme}
-        size={24}
-      >
-        {colorScheme === "dark" ? <IconSun /> : <IconMoon />}
-      </ActionIcon>
+      <Switch
+        aria-label="Toggle dark mode"
+        size="md"
+        onLabel={moonIcon}
+        offLabel={sunIcon}
+        checked={colorScheme === "dark"}
+        onChange={toggleColorScheme}
+      />
     </Group>
   );
 }

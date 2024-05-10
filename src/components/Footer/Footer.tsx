@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <Flex direction="row" justify="flex-end">
       <ActionIcon
-        variant="light"
+        variant="transparent"
         size="xl"
         aria-label="Back to top"
         onClick={() => {

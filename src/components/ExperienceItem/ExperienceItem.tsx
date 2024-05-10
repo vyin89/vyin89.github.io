@@ -24,7 +24,17 @@ export const ExperienceItem = ({
       </List>
       <Group pt="xl" gap={2}>
         {selectedData?.tags?.map((tag) => (
-          <Chip size={"xs"} key={tag} variant="light">
+          <Chip
+            size={"xs"}
+            key={tag}
+            variant="light"
+            checked
+            styles={{
+              iconWrapper: {
+                display: "none",
+              },
+            }}
+          >
             {tag}
           </Chip>
         ))}
